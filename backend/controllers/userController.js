@@ -79,7 +79,7 @@ const getMe = asyncHandler(async (req, res) => {
 
 // Generate JWT Token
 const generateToken = (id) => {
-  const jwtSecret = process.env.JWT_SECRET ? process.env.JWT_SECRET : 'abc123'
+  const jwtSecret = process.env.JWT_SECRET
   return jwt.sign({ id }, jwtSecret, {
     expiresIn: '30d'
   })

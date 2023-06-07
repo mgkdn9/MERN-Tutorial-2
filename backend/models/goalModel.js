@@ -13,7 +13,7 @@ const goalSchema = mongoose.Schema(
     },
   },
   {
-    timestamps: true, //creates 'updatedAt' and 'createAt' fields automatically
+    timestamps: true, //creates 'updatedAt' and 'createdAt' fields automatically
   }
 );
 
